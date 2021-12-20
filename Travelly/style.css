@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 2.8rem;
 }
@@ -18,6 +22,7 @@ h2 {
 
 h3 {
   font-size: 2.6rem;
+  font-weight: normal;
 }
 
 a {
@@ -40,6 +45,7 @@ nav {
   margin: auto;
   padding: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul {
@@ -51,6 +57,67 @@ nav ul {
 
 #logo {
   flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
 }
 
 /* JUMBOTRON */
+
+.hero {
+  min-height: 90vh;
+  background: url(./images/jumbotron.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 30rem;
+}
+
+h2,
+h3 {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  padding: 1rem;
+}
+
+.hero button {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  background: violet;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+/* LOCATION SECTION */
+
+#locations{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),url(./images/new-york-page.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+}
+
+.locations-head{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 933px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+}
