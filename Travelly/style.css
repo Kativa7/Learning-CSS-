@@ -225,15 +225,6 @@ h3 {
     border-radius: 1rem;
 }
 
-@keyframes cloudAnimation {
-  from {
-    transform: translate(10%, -10%);
-  }
-  to {
-    transform: translate(0%, 0%);
-  }
-}
-
 footer{
     color: white;
     background: rgb(23, 51, 95);
@@ -267,6 +258,15 @@ footer img {
     max-width: 10%;
 }
 
+@keyframes cloudAnimation {
+    from {
+      transform: translate(10%, -10%);
+    }
+    to {
+      transform: translate(0%, 0%);
+    }
+  }
+  
 /* Media Queries */
 
 @media screen and (max-width: 933px) {
