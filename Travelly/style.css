@@ -106,6 +106,7 @@ h3 {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .locations-head {
@@ -117,16 +118,17 @@ h3 {
   position: absolute;
   top: 0%;
   right: 0%;
+  pointer-events: none;
 }
 
 .moving-cloud-1 {
   top: 15%;
   z-index: -1;
-  animation: cloudAnimation 5s infinite alternate;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
 
 .moving-cloud-2{
-  animation: cloudAnimation 4s infinite alternate;
+  animation: cloudAnimation 4s infinite alternate ease;
 
 }
 @keyframes cloudAnimation {
@@ -148,5 +150,14 @@ h3 {
   }
   #logo {
     padding: 2rem;
+  }
+  .cloud{
+      height: 40rem;
+  }
+  .moving-cloud-1{
+      display: none;
+    }
+    .moving-cloud-2{
+      z-index: -1;
   }
 }
