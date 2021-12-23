@@ -85,7 +85,7 @@ h3 {
   border: none;
   border-radius: 1rem;
   color: white;
-  background: violet;
+  background: rosybrown;
   cursor: pointer;
   font-size: 1.8rem;
   transition: background 0.6s ease-in-out;
@@ -131,6 +131,56 @@ h3 {
   animation: cloudAnimation 4s infinite alternate ease;
 
 }
+
+/* BENEFITS SECTION */
+
+.benefits{
+    min-height: 100vh;
+}
+
+.benefits-head{
+    min-height: 30vh;
+    background:rgb(48, 24, 71);
+    text-align: center;
+    padding:  3rem;
+}
+
+.cards{
+    min-height: 70vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    flex: 1 1 25rem;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5), 0px 20px 20px rgb(0, 0, 0, 0.5);
+}
+
+.cards img {
+    max-width: 40%;
+    margin: 1.5rem;
+}
+
+.card h4{
+    padding: 2rem;
+    font-size: 2.5rem;
+}
+
+.card p{
+    font-size: 1.8rem;
+}
+
+.card-icon{
+    background: rosybrown
+}
+
+
 @keyframes cloudAnimation {
   from {
     transform: translate(10%, -10%);
@@ -139,6 +189,7 @@ h3 {
     transform: translate(0%, 0%);
   }
 }
+
 /* Media Queries */
 
 @media screen and (max-width: 933px) {
