@@ -52,6 +52,9 @@ button {
 .main-head {
   background: rgb(23, 51, 95);
   color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 nav {
@@ -231,6 +234,39 @@ h3 {
   }
 }
 
+footer{
+    color: white;
+    background: rgb(23, 51, 95);
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 3 1 60rem;
+    justify-content: space-between;
+}
+
+footer h4{
+    flex: 1 1 40rem;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+footer img {
+    max-width: 10%;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 933px) {
@@ -252,4 +288,19 @@ h3 {
     .moving-cloud-2{
       z-index: -1;
   }
+  .form-wrapper{
+      width: 100%;
+  }
+  .footer-wrapper{
+      text-align: center;
+  }
+  footer img {
+    max-width: 20%;
+}
+footer h4{
+    flex: 1 1 40rem;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: 4rem;
+}
 }
