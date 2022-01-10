@@ -37,6 +37,7 @@ html {
 
 h1 {
   font-size: var(--header1);
+  font-family: 'Vibes', sans-serif;
 }
 
 h2 {
@@ -66,6 +67,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+body{
+    font-family: 'Ruhl', sans-serif;
 }
 
 /* Helper class */
