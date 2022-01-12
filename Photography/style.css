@@ -85,8 +85,9 @@ body {
 
 /* NAV SECTION */
 
-.main-head{
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+.main-head {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 nav {
@@ -98,25 +99,66 @@ nav {
   padding: 2rem 0rem;
 }
 
-#logo{
-    flex: 1 1 20rem;
+#logo {
+  flex: 1 1 20rem;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    flex: 1 1 20rem;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
 }
-.hero{
-    min-height: 90vh;
-    display: flex;
-    flex-wrap: wrap;
-    width: 95%;
-    margin: 0 0 0 auto;
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 0 0 auto;
+  overflow: hidden;
 }
-.hero-intro{
-    flex: 1 1 40rem;
+.hero-intro {
+  flex: 2 1 40rem;
+  text-align: center;
 }
-.hero-image{
-    flex: 1 1 40rem;
+.hero-intro p {
+  padding: 5rem 10rem;
+}
+.hero-intro h2 {
+  padding-top: 3rem;
+}
+.hero-intro a {
+  padding: 2rem 8rem;
+  border: 3px solid black;
+  margin-bottom: 4rem;
+}
+.hero-images {
+  flex: 1 1 40rem;
+  background: linear-gradient(#dad8dd, #dad1d4);
+  position: relative;
+  z-index: 1;
+}
+.hero-elena {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.plant {
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  z-index: -1;
+}
+.plant2 {
+  left: 40%;
+}
+
+/* Animtaions */
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
