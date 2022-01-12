@@ -4,20 +4,19 @@
   box-sizing: border-box;
 }
 
-
 /* Adding Fonts */
 
 @font-face {
-    font-family: 'Ruhl';
-    src: url('./fonts/FrankRuhlLibre-Regular.ttf');
+  font-family: "Ruhl";
+  src: url("./fonts/FrankRuhlLibre-Regular.ttf");
 }
 @font-face {
-    font-family: 'Ruhl Med';
-    src: url('./fonts/FrankRuhlLibre-Medium.ttf');
+  font-family: "Ruhl Med";
+  src: url("./fonts/FrankRuhlLibre-Medium.ttf");
 }
 @font-face {
-    font-family: 'Vibes';
-    src: url('./fonts/GreatVibes-Regular.ttf');
+  font-family: "Vibes";
+  src: url("./fonts/GreatVibes-Regular.ttf");
 }
 
 html {
@@ -37,7 +36,7 @@ html {
 
 h1 {
   font-size: var(--header1);
-  font-family: 'Vibes', sans-serif;
+  font-family: "Vibes", sans-serif;
 }
 
 h2 {
@@ -57,6 +56,7 @@ li,
 button,
 label,
 input,
+a,
 p {
   font-size: var(--text);
 }
@@ -67,17 +67,56 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-body{
-    font-family: 'Ruhl', sans-serif;
+body {
+  font-family: "Ruhl", sans-serif;
 }
 
 /* Helper class */
 
-.flex{
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAV SECTION */
+
+.main-head{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+#logo{
+    flex: 1 1 20rem;
+}
+
+.nav-links{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex: 1 1 20rem;
+}
+.hero{
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 0 0 auto;
+}
+.hero-intro{
+    flex: 1 1 40rem;
+}
+.hero-image{
+    flex: 1 1 40rem;
 }
