@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 62.5%;
 }
-body {
+body,
+button {
   font-family: "Poppins", sans-serif;
 }
 
@@ -35,11 +36,11 @@ header {
 nav {
   flex: 2;
 }
-.nav-links{
+.nav-links {
   justify-content: space-around;
   list-style: none;
 }
-.nav-link{
+.nav-link {
   font-size: 1.8rem;
   text-decoration: none;
   color: #5f5f79;
@@ -47,4 +48,57 @@ nav {
 .cart {
   flex: 1;
   justify-content: flex-end;
+}
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center; /*vertically */
+}
+.cover {
+  flex: 1;
+}
+.cover img {
+  height: 60vh;
+  filter: drop-shadow(0px 5px 3px black);
+}
+
+.introduction {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.intro-text p {
+  margin-top: 0.5rem;
+  color: #858772;
+  font-size: 2.2rem;
+}
+
+.cta {
+  padding: 5rem 0rem 0rem 0rem;
+}
+.cta-select {
+  border: 2px solid #c36cbb;
+  color: #c36cbb;
+  background: transparent;
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.cta-add {
+  border: none;
+  color: white;
+  background: #c36cbb;
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 3rem;
 }
